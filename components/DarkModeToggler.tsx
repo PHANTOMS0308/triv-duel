@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import Icon from './Icon';
 
 export type DarkModeTogglerProps = {
   className?: string;
 }
 
-export default function DarkModeToggler({ className='' }: DarkModeTogglerProps) {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
+const DarkModeToggler = memo(function DarkModeToggler({ className='' }: DarkModeTogglerProps) {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const ariaLabel = `Switch to ${isDarkMode ? 'Light Mode' : 'Dark Mode'}`;
 
   useEffect(() => {
@@ -38,4 +38,6 @@ export default function DarkModeToggler({ className='' }: DarkModeTogglerProps) 
       }
     </button>
   )
-}
+});
+
+export default DarkModeToggler;

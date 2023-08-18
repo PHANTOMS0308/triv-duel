@@ -9,7 +9,10 @@ export default function Index() {
         <Logo />
       </div>
       <div className="space-y-4">
-        <ButtonLink href="/signup" ariaLabel="Go to Signup Page" highlight>
+        <ButtonLink href="/todo" ariaLabel="Go to Signup Page" highlight>
+          <span>Demo</span>
+        </ButtonLink>
+        <ButtonLink href="/signup" ariaLabel="Go to Signup Page">
           <span>SIGN UP</span>
         </ButtonLink>
         <ButtonLink href="/login" ariaLabel="Go to Login Page">

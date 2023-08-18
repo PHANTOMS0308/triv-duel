@@ -14,4 +14,11 @@
     @apply dark:bg-slate-50 dark:text-slate-950 dark:border-slate-50
            bg-slate-950 text-slate-50 border-slate-950;
   }
+
+  .ipt {
+    @apply w-full rounded-2xl text-xl py-4
+    bg-transparent border-2
+    focus:ring-0 focus:border-blue-500
+    dark:focus:border-orange-300;
+  }
 }
