@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center w-full py-3 
+           border-2 border-current rounded-2xl
+           text-center font-bold text-2xl;
+  }
+
+  .btn--highlight {
+    @apply dark:bg-slate-50 dark:text-slate-950 dark:border-slate-50
+           bg-slate-950 text-slate-50 border-slate-950;
+  }
+}
